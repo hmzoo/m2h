@@ -1,0 +1,18 @@
+-cpp ../build/cpp
+
+
+-resource ./templates/default/markdown.css@default_markdown_css
+-resource ./templates/default/style.css@default_style_css
+-resource ./templates/default/template.mustache@default_template_mustache
+
+-resource ./templates/default/favicon.ico@favicon_ico
+-resource ./templates/default/favicon.png@favicon_png
+
+-lib hxcpp
+-lib arguable
+-lib mustache
+-lib yaml
+
+
+
+-main m2h.Main

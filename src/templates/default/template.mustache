@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>{{page_title}}</title>
+		<link rel='stylesheet' type='text/css' href='_markdown.css' />
+		<link rel='stylesheet' type='text/css' href='_style.css' />
+		<link rel='shortcut icon'  href='favicon.ico' />
+		<link rel='icon' type='image/x-icon' href='favicon.ico' />
+		<link rel='icon' type='image/png' href='favicon.png' />
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<div id="site-name"><a href='index.html' >{{site_name}}</a><span id="site-slogan">{{site_slogan}}</span></div>
+				<div id="subtitles">
+					<span id="primary-directory">{{primary_directory}}</span>
+					<span id="secondary-directory">{{secondary_directory}}</span>
+				</div>
+				
+				<nav>
+					<div id="primary-links">{{primary_links}}</div>
+					<div id="secondary-links">{{secondary_links}}</div>
+				</nav>
+			</header>
+			<aside id="navigation-files" >
+				<div id="breadcumb">{{breadcumb}}</div>				
+				<div  id="files-list" {{hide_files}} >{{files_list}}</div>
+				<div  id="directories-list" {{hide_files}} >{{directories_list}}</div>
+				&nbsp;
+			</aside>
+			<aside id="navigation-chapters" {{hide_chapters}} >
+				<h2  ><a href='#' >{{current_directory}}</a></h2>
+				<h3  ><a href='#' >{{page_title}}</a></h3>
+				<div  id="chapters-list">{{chapters_list}}</div>
+				
+			</aside>
+			<div id="content">
+				
+				<div id="main" >							
+					{{content}}
+				</div>
+			</div>
+			<footer>
+				<div id="informations" > {{date}}  {{informations}} </div>
+			</footer>
+		</div>
+	</body>
+</html>
